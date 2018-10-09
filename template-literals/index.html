@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+    
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+        <title>Todo App</title>
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
+    </head>
+
+    <body>
+        <div class="form-container">
+            <header class="form-header">
+                <h1 class="form-title">My Todo List</h1>
+
+                <label class="task-prompt">Enter Task Name: </label>
+
+                <br>
+
+                <input id="task-input" class="task-input" type="text" placeholder="Task Title" />
+
+                <input id="add-task-button" class="add-task-button" type="submit" value="Add" />   
+            </header>
+
+            <fieldset id="pending-task-list" class="task-list">
+                <legend class="task-list-title">Pending Tasks</legend>
+
+                <div id="pending-tasks">
+                    <!-- This is where the tasks will be added -->
+                </div>
+            </fieldset>
+
+            <fieldset id="completed-task-list" class="task-list">
+                <legend class="task-list-title">Completed Tasks</legend>
+                
+                <div id="completed-tasks">
+                <!-- This is where the tasks will be added -->
+                </div>
+            </fieldset>
+        </div>
+    </body>
+
+    <script src="scripts/main.js"></script>
+</html>

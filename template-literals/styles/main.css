@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.form-container {
+    width: 90%;
+    max-width: 1080px;
+    padding: 1em;
+    margin: auto;
+}
+
+    .form-header {
+        text-align: center;
+        padding: 1em;
+    }
+
+        .form-title {
+            font-weight: bold;
+        }
+
+        .task-prompt {
+            font-weight: bold;
+   
+        }
+
+        .task-input {
+            font-weight: bold;
+            padding: 0.5em 1em;
+        }
+
+        .add-task-button {
+            font-weight: bold;
+            margin: 1em;
+        }
+
+    .task-list {
+        padding: 1em;
+    }
+
+        .task-list-title {
+            font-weight: bold;
+        }
+
+        .task-list-item {
+            display:flex;
+            width: 90%;
+            padding: 0 1.5em;
+            align-items: center;
+            border-bottom: 1px solid rgba(200, 200, 200, 1);
+
+        }
+
+            .task-checkbox {
+                transform: scale(2);
+            }
+            
+            .task-title {
+                width: 80%;
+                padding-left: 1em;
+            }
+            
+            .remove-task-button {
+                margin-left: 1em;
+                width: 100px;
+            }
