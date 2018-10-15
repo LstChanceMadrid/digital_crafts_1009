@@ -2,21 +2,24 @@
 
 let addTask = document.getElementById('add-task-button');
 
-let tasks = ''
 let completedList = document.getElementById('completed-tasks');
+
 let pendingList = document.getElementById('pending-tasks');
+
+// used to put each individual task together at add to the inner html
+let tasks = ''
+
 
 const removeTask = (removebutton) => {
      let item = removebutton.parentElement;
+
      item.parentElement.removeChild(item);
  }
 
-
+// when the 
 const swapList = (checkbox) => {
-
     let taskItem = checkbox.parentElement;
-    console.log(taskItem.parentElement);
-    console.log(checkbox.checked);
+
     if (checkbox.checked == true) {
         completedList.appendChild(taskItem);
     } else {
@@ -24,7 +27,7 @@ const swapList = (checkbox) => {
     }
 }
 
-
+// sends the text input into the pending list.
 addTask.addEventListener('click', function(e) {
     e.preventDefault();
     let taskInput = document.getElementById('task-input');
@@ -33,7 +36,7 @@ addTask.addEventListener('click', function(e) {
     let pendingTasks = document.querySelector('#pending-task-list #pending-tasks');
 
 
-
+    // creates the list item inside of a div
     let task = 
                 `
                 <div class="task-list-item">
@@ -47,6 +50,6 @@ addTask.addEventListener('click', function(e) {
 
 
 
-
+    // appending the tasks to the todo list
     pendingTasks.insertAdjacentHTML('beforeend', task);
 });
